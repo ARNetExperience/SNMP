@@ -1,43 +1,23 @@
-/* Reset some default styling */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-}
-
 /* Add CSS for the containers holding the model-viewer elements */
 
 .model-viewer-container {
   /* Set the display property to inline-block for inline layout with block-level box properties */
-  display: inline-block;
+
 
   /* Set the width of the container */
   width: 30%;
   /* Adjust the width as needed */
 
-  /* Add margin to create spacing around the container */
-  margin: 10px;
-  /* Add spacing between the containers */
+ 
+  margin: 0px;
+  
 }
 
 
 
+/* Apply basic styles to the button with the class 'transparent-button' */
 
-/* Style the model-viewer elements if necessary */
-
-model-viewer {
-  /* Set the width of the model-viewer element to 100% */
-  width: 100%;
-
-  /* Set the height of the model-viewer element */
-  height: 300px;
-  /* Adjust the height as needed */
-}
-
-
- /* Apply basic styles to the button with the class 'transparent-button' */
-
- .transparent-button {
+.transparent-button {
   /* Set the background color of the button to transparent */
   background-color: white;
 
@@ -69,51 +49,51 @@ model-viewer {
 
   /* Keyframe at 0% */
   0% {
-      /* Set the color and border color to red */
-      color: red;
-      border-color: red;
+    /* Set the color and border color to red */
+    color: red;
+    border-color: red;
   }
 
   /* Keyframe at 16.666% */
   16.666% {
-      /* Set the color and border color to orange */
-      color: orange;
-      border-color: orange;
+    /* Set the color and border color to orange */
+    color: orange;
+    border-color: orange;
   }
 
   /* Keyframe at 33.333% */
   33.333% {
-      /* Set the color and border color to yellow */
-      color: yellow;
-      border-color: yellow;
+    /* Set the color and border color to yellow */
+    color: yellow;
+    border-color: yellow;
   }
 
   /* Keyframe at 50% */
   50% {
-      /* Set the color and border color to green */
-      color: green;
-      border-color: green;
+    /* Set the color and border color to green */
+    color: green;
+    border-color: green;
   }
 
   /* Keyframe at 66.666% */
   66.666% {
-      /* Set the color and border color to blue */
-      color: blue;
-      border-color: blue;
+    /* Set the color and border color to blue */
+    color: blue;
+    border-color: blue;
   }
 
   /* Keyframe at 83.333% */
   83.333% {
-      /* Set the color and border color to indigo */
-      color: indigo;
-      border-color: indigo;
+    /* Set the color and border color to indigo */
+    color: indigo;
+    border-color: indigo;
   }
 
   /* Keyframe at 100% */
   100% {
-      /* Set the color and border color to violet */
-      color: violet;
-      border-color: violet;
+    /* Set the color and border color to violet */
+    color: violet;
+    border-color: violet;
   }
 }
 
@@ -129,7 +109,153 @@ model-viewer {
   /* Set the text color on hover */
 }
 
+.packet-button:hover {
+  /* Set the background color to white on hover */
+  background-color: #ffffff;
+  /* Set the background color on hover */
 
+  /* Set the text color to black on hover */
+  color: #000000;
+  /* Set the text color on hover */
+}
+
+.packet-button {
+  /* Set the background color of the button to transparent */
+  background-color: #ffffff;
+
+  /* Set the text color of the button */
+  color: rgb(59, 0, 101);
+  /* Set the text color */
+
+  /* Add a border to the button with a 2px width and the specified color */
+  border: 2px solid rgb(59, 0, 101);
+  /* Set the border color */
+
+  /* Set the cursor to a pointer to indicate interactivity */
+  cursor: pointer;
+
+  /* Add a smooth transition effect for background color and text color changes */
+  transition: background-color 0.1s ease, color 0.1s ease;
+  /* Add a smooth transition effect */
+
+  /* Apply the 'rainbow' animation with a duration of 3s and infinite repeat */
+  animation: packet_color 10s infinite;
+  /* Add rainbow animation */
+  /* Add rainbow animation */
+}
+
+
+/* Define a keyframe animation named 'rainbow' */
+
+@keyframes packet_color {
+
+
+
+
+  50% {
+    /* Set the color and border color to green */
+    color: red;
+    border-color: red;
+  }
+
+  100% {
+    /* Set the color and border color to green */
+    color: blue;
+    border-color: blue;
+  }
+
+
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.3);
+  background: #ffffff url(broken_noise_@2X.png) repeat;
+  position: relative;
+}
+
+/* Center the model containers on the page */
+.model-container {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  /* Add a maximum width to control container width */
+  height: 400px;
+  /* Set a fixed height for the container */
+  overflow: auto;
+  /* Add scrollbars if content overflows the container */
+}
+
+
+
+
+
+/* Style the h1 elements within the containers */
+.model-container h1 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Style the paragraph text within the containers */
+.model-container p {
+  font-size: 14px;
+  /* Adjust the font size as needed */
+  margin: 10px 0;
+  word-wrap: break-word;
+  /* Wrap text within the container */
+}
+
+/* Style the <model-viewer> elements */
+model-viewer {
+  width: 50%;
+  /* Adjust the width to fit your layout */
+  height: 300px;
+  /* Adjust the height to fit your layout */
+}
+
+
+
+
+#goToPageButton {
+  background-color: #0074d9;
+  /* Button background color */
+  color: #fff;
+  /* Text color */
+  padding: 10px 20px;
+  /* Padding around the text */
+  border: none;
+  /* Remove button border */
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Show pointer cursor on hover */
+  font-size: 16px;
+  /* Font size */
+}
+
+#goToPageButton:hover {
+  background-color: #0056b3;
+  /* Change background color on hover */
+}
 
 
 .fh5co-nav {
@@ -229,6 +355,11 @@ model-viewer {
   -o-transition: 0.5s;
   transition: 0.5s;
   text-decoration: none;
+}
+
+#documentation , #video{
+  padding: 10px 6px;
+  
 }
 
 .scrolled .fh5co-nav ul li a {
@@ -362,7 +493,7 @@ h3 {
   clear: both;
 }
 
-.container {
+.container{
   text-align: left;
 }
 
@@ -389,7 +520,7 @@ h3 {
   padding: 0;
   margin: 0;
   list-style: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0);
 }
 
 #fh5co-footer .fh5co-footer-links li a {
@@ -404,10 +535,13 @@ h3 {
 #fh5co-footer .fh5co-footer-links li a:hover {
   text-decoration: none;
   color: #ea272d;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #fh5co-footer .fh5co-widget {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   margin-left: 70px;
 
 }
@@ -440,7 +574,7 @@ h3 {
   margin: 0 0 20px 0;
   position: relative;
   padding-left: 40px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .contact-info li i {
@@ -485,7 +619,6 @@ h3 {
 
 .fh5co-social-icons li a i {
   font-size: 20px;
-  color: #ea272d;
 }
 
 
@@ -509,14 +642,24 @@ h3 {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* .nav-btn {
-    flex: 3;
-    display: flex;
-  }
-  
-  .nav-links {
-    flex: 2;
-  } */
+  flex: 3;
+  display: flex;
+}
+
+.nav-links {
+  flex: 2;
+} */
 
 
 
@@ -525,16 +668,16 @@ h3 {
 
 
 /* .btn {
-    display: inline-block;
-    padding: .5rem 1.3rem;
-    font-size: .8rem;
-    border: 2px solid #fff;
-    border-radius: 2rem;
-    line-height: 1;
-    margin: 0 .2rem;
-    transition: .3s;
-    text-transform: uppercase;
-  } */
+  display: inline-block;
+  padding: .5rem 1.3rem;
+  font-size: .8rem;
+  border: 2px solid #fff;
+  border-radius: 2rem;
+  line-height: 1;
+  margin: 0 .2rem;
+  transition: .3s;
+  text-transform: uppercase;
+} */
 
 
 
@@ -819,17 +962,8 @@ h3 {
 }
 
 
-/* Quiz csss */
+/* QUIZ CSS */
 
-
-/* img{
-    width: 5.5rem;
-    height: 5.2rem;
-    border-radius: 50%;
-}
-.img{
-    position: fixed;
-} */
 
 
 #title {
@@ -837,7 +971,7 @@ h3 {
   padding: 0.8rem 0;
   font-size: 3rem;
   color: rgb(0, 0, 0);
-  background: #ffc6c6;
+  background: rgb(127, 206, 255);
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -845,7 +979,7 @@ h3 {
   margin: 3rem auto;
   width: 90vw;
   padding: 2rem;
-  background: #ffc6c6;
+  background: rgb(127, 206, 255);
   cursor: default;
   border-radius: 1rem;
   color: #000000;
@@ -904,13 +1038,13 @@ span {
 
 
 button:active {
-  background: #ffc6c6;
+  background: rgb(127, 206, 255);
 }
 
 #scoreboard,
 #answerBank {
   width: 50rem;
-  background: #ffc6c6;
+  background: rgb(127, 206, 255);
   padding: 2rem;
   text-align: center;
   margin: auto;
