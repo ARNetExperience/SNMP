@@ -971,7 +971,7 @@ h3 {
   padding: 0.8rem 0;
   font-size: 3rem;
   color: rgb(0, 0, 0);
-  background: rgb(127, 206, 255);
+  background: #c9ffe8;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -979,7 +979,7 @@ h3 {
   margin: 3rem auto;
   width: 90vw;
   padding: 2rem;
-  background: rgb(127, 206, 255);
+  background: #c9ffe8;
   cursor: default;
   border-radius: 1rem;
   color: #000000;
@@ -1038,13 +1038,13 @@ span {
 
 
 button:active {
-  background: rgb(127, 206, 255);
+  background: #c9ffe8;
 }
 
 #scoreboard,
 #answerBank {
   width: 50rem;
-  background: rgb(127, 206, 255);
+  background: #c9ffe8;
   padding: 2rem;
   text-align: center;
   margin: auto;
